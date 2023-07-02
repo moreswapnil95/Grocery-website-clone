@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="amino.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+
+
+    <!---navbar start-->
+
+  <div class="navbar1 pt-4 pb-4 d-none d-lg-block shadow sticky-top">
+    <div class="container-fluid ">
+      <div class="row  align-items-center">
+
+        <div class=" col-2 ">
+          <div class="amino text-center">
+            <a href="index.html">
+              <img src="image/logo_amino.png" class="img-fluid">
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="col-8 ">
+          <div class="list1 d-flex justify-content-center">
+            
+            <ul class="">
+              <li class="li21">
+                <a href="index.html">Home</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="product.html">Product</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="blog.html">Blog</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="about.html">About Us</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="icon text-center">
+           <i class="fa fa-search  me-2" aria-hidden="true"
+           data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"></i> 
+
+            <i class="fa fa-user-o ms-2 me-2" aria-hidden="true"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop1"></i>
+
+            <i class="fa fa-heart-o ms-2 me-2 position-relative" aria-hidden="true">
+              <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill ">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </i>
+
+            <i class="fa fa-shopping-cart ms-2 position-relative" aria-hidden="true">
+              <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill ">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!--********offcanvas search Modal user*****-->
+
+    <div class="offcanvas offcanvas-top h-50" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body ">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 ">
+
+              <div class="input-group ig1 mb-5 d-flex justify-content-center align-items-center mb-3">
+                
+                <input type="text" id="text1" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                <i class="fa fa-search ms-2 fs-3" aria-hidden="true"></i>
+              </div>
+
+              <div class="input-group1">
+                <p class="p1">Popular searches :</p>
+                <ul class="d-flex">
+                  <li class=" me-1">organic</li>
+                  <li class="ms-1 me-1">fruit</li>
+                  <li class="ms-1 me-1">juice</li>
+                  <li class="ms-1 me-1">almond</li>
+                  <li class="ms-1 me-1">apple</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+<div class="modal fade " id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      
+
+        <button type="button " class="btn-close btn1" data-bs-dismiss="modal" aria-label="Close"></button>
+      
+      <div class="modal-body ">
+
+
+
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="tabstyle" role="presentation">
+            <a class="nav-link active"  data-bs-toggle="pill" href="#pills-home"  role="tab" >Login</a>
+          </li>
+          <li class="tabstyle" role="presentation">
+            <a class="nav-link"  data-bs-toggle="pill" href="#pills-profile"  role="tab" >
+              Register</a>
+          </li>
+          
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            
+            <form action="" class="row needs-validation justify-content-center" >
+
+              <div class="col-sm-9">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control fcl" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+            
+
+              
+                <label for="inputPassword" class="col-form-label">Password</label>
+                <div class="input-group has-validation mb-3">
+                  <input type="password" class="form-control fcl" id="inputPassword" required>
+                </div>
+              
+
+              <div class=" text-center d-flex justify-content-between">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Remember me
+                  </label>
+                </div>
+
+                <p class="lost">Lost Password?</p>
+              </div>
+
+              <div class="lg text-center">
+                <button class="btn btn-primary" type="submit" id="mit">LOG IN</button>
+              </div>
+
+            </div>
+
+            </form>
+          </div>
+
+
+
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+            <form action="" class="row needs-validation justify-content-center">
+
+              <div class="col-sm-9">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation mb-2">
+                  <input type="text" class="form-control fcl" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+
+
+                <label for="validationCustomUsername1" class="form-label">Email</label>
+                <div class="input-group has-validation ">
+                     <input type="email" class="form-control fcl" id="validationCustomUsername1" aria-describedby="inputGroupPrepend" required>
+                 <div class="invalid-feedback">
+                   Please choose a username.
+                   </div>
+                </div>
+            
+
+              
+                <label for="inputPassword" class="col-form-label">Password</label>
+                <div class="input-group has-validation mb-3">
+                  <input type="password" class="form-control fcl" id="inputPassword" required>
+                  <div class="invalid-feedback">
+                    Please enter a password.
+                  </div>
+                </div>
+
+
+                <p class="pers text-center">
+                  Your personal data will be used to support your experience throughout 
+                  this website, to manage access to your account, 
+                  and for other purposes described in our privacy policy.
+                </p>
+              
+
+              
+
+              <div class="lg text-center">
+                <button class="btn btn-primary" type="submit" id="mit">Register</button>
+              </div>
+
+            </div>
+
+            </form>
+          </div>
+        </div>
+        
+        
+
+        
+      </div>
+
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+
+    <!--******** offcanvas search Modal user ENDS *******-->
+
+  <nav class="navbar bg-white navbar-expand-lg pt-4 pb-4 navbar-light sticky-top shadow d-block d-lg-none fixed-top ">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Amino</a> -->
+      <div class="col-3 first ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!-- <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5> -->
+            <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <!-- </div> -->
+          <p class="head text-center pb-3">MENU</p>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 ">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="blog.html">
+                  Blog
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <i class="fa fa-search ms-2 me-2 fs-4 " 
+          data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-hidden="true"></i>
+      </div>
+
+
+      <div class="col-6 ">
+        <div class="amino text-center">
+          <a href="index.html">
+            <img src="image/logo_amino.png" class="img-fluid">
+          </a>
+          
+        </div>
+      </div>
+
+      <div class="col-3 ">
+        <div class="icon text-end">
+         <i class="fa fa-user-o me-1" aria-hidden="true"
+         data-bs-toggle="modal" data-bs-target="#staticBackdrop1"></i> 
+          <i class="fa fa-shopping-cart me-2 position-relative" aria-hidden="true">
+            <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill ">
+              0
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </i>
+        </div>
+      </div>
+
+      
+    </div>
+    
+  </nav>
+
+
+
+
+  <!-------********Navbar Ends**********-->
+
+
+
+  <!--*******Carousel*********-->
+
+  <div id="carouselExampleIndicators" class="carousel slide cs" data-bs-ride="carousel" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner ">
+
+      <div class="carousel-item position-relative active" id="ci1" >
+
+        <div class="inner position-absolute ms-4 top-50"  >
+
+            <p class="p4 ">Discover 100% organic</p>
+            <p class="p5">dry fruits</p>
+            <p class="p6 ">up to 75% off</p>
+            <button type="button" class="btn btn-light" id="shop">Shop Now</button>
+
+
+        </div>
+        <img src="image/slider1-1.jpg" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item position-relative" id="ci1">
+
+        <div class="inner position-absolute ms-4 top-50"  >
+
+          <p class="p4 p41">No sugar zero calories</p>
+          <p class="p5 p51">organic</p>
+          <p class="p6 p61">iced tea</p>
+          <button type="button" class="btn btn-light" id="shop">Shop Now</button>
+
+
+      </div>
+        <img src="image/slider1-2.jpg" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev ccpn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next ccpn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--*******Carousel Ends*********-->
+
+  <!--***********three zoom*************-->
+
+  <div class="container mt-5 mb-5">
+    <div class="row g-3 justify-content-center">
+
+      <div class="col-sm-10 col-lg-4 ">
+
+        <div class="juce border d-flex align-items-center position-relative">
+
+          <div class="orange position-absolute ms-4">
+            <p class="p7">Orange Juice</p>
+            <p class="p8">Natural</p>
+            <span class="sp1">SHOP NOW</span>
+          </div>
+          <div class="juce1 h-100 w-100 ">
+           
+          </div>
+         
+        </div>
+
+      </div>
+
+      <div class="col-sm-10 col-lg-4 ">
+        <div class="juce border d-flex align-items-center position-relative" >
+          <div class="juce1 h-100 w-100 " id="jc1">
+           
+          </div>
+          <div class="orange position-absolute ms-4">
+            <p class="p7">Amla Candy</p>
+            <p class="p8">& Murabba</p>
+            <span class="sp1">SHOP NOW</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-lg-4 ">
+        <div class="juce border d-flex align-items-center position-relative">
+          <div class="juce1 h-100 w-100 " id="jc2">
+           
+          </div>
+          <div class="orange position-absolute ms-4">
+            <p class="p7">Jam Maj</p>
+            <p class="p8">Spring Sale</p>
+            <span class="sp1">SHOP NOW</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--***********three zoom ends*************-->
+
+
+
+  <!--six circle-->
+
+  <p class="desc text-center">Shop By Categories </p>
+
+  <p class="cate text-center">FEATURED CATEGORIES</p>
+
+  <div class="leaf text-center mb-5">
+    <img src="image/bg-title.png" alt="">
+  </div>
+
+
+  <div class="mb-5">
+
+    <div class="row g-3">
+
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center ">
+        <img src="image/img-cate1.png" alt="" class="w-75">
+        <p class="cate1">Fruits</p>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center " >
+        <img src="image/img-cate2.png" alt="" class="w-75">
+        <p class="cate1">Flour</p>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+        <img src="image/img-cate3.png" alt="" class="w-75">
+        <p class="cate1">Vegetables</p>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center ">
+        <img src="image/img-cate4.png" alt="" class="w-75">
+        <p class="cate1">Meat</p>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center ">
+        <img src="image/img-cate5.png" alt="" class="w-75">
+        <p class="cate1">Flavoured Milk</p>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center ">
+        <img src="image/img-cate6.png" alt="" class="w-75">
+        <p class="cate1">Jam</p>
+      </div>
+    </div>
+  </div>
+
+  <!--four suggest-->
+
+  <div class="container-fluid mb-5">
+    <div class="row pt-3 ms-3 me-3" id="sug">
+
+      <div class="col-sm-6 col-lg-3">
+
+        <div class="card mb-3" >
+          <div class="row g-0">
+            <div class="col-md-3 text-center align-self-center">
+              <i class="fa fa-truck " aria-hidden="true" id="ship"></i>
+            </div>
+            <div class="col-md-9 ">
+              <div class="card-body " id="cb1">
+                <h5 class="card-title" id="ct1">
+                  Free Returns</h5>
+                <p class="card-text"><small class="text-muted">On all orders over $75.00</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-3 text-center align-self-center">
+              <i class="fa fa-reply" aria-hidden="true" id="ship"></i>
+            </div>
+            <div class="col-md-9">
+              <div class="card-body" id="cb1">
+                <h5 class="card-title" id="ct1">Free Returns</h5>
+                <p class="card-text"><small class="text-muted">Returns are free within 9 days</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+
+        <div class="card mb-3" >
+          <div class="row g-0">
+            <div class="col-md-3 text-center align-self-center">
+              <i class="fa fa-headphones" aria-hidden="true" id="ship"></i>
+            </div>
+            <div class="col-md-9">
+              <div class="card-body " id="cb1">
+                <h5 class="card-title" id="ct1">Support 24/7</h5>
+                <p class="card-text"><small class="text-muted">Contact us 24 hours a day</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-sm-6 col-lg-3">
+        <div class="card mb-3" >
+          <div class="row g-0">
+            <div class="col-md-3 text-center align-self-center">
+              <i class="fa fa-shield" aria-hidden="true" id="ship"></i>
+            </div>
+            <div class="col-md-9">
+              <div class="card-body" id="cb1">
+                <h5 class="card-title" id="ct1">100% Payment Secure</h5>
+                <p class="card-text"><small class="text-muted">Your payment are safe with us.</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!--Four Suggestion Ends-->
+
+
+
+
+
+  <!--Arrival start-->
+
+  <p class="desc text-center">See Our Latest </p>
+
+  <p class="cate text-center">NEW ARRIVALS</p>
+
+  <div class="leaf text-center mb-5">
+    <img src="image/bg-title.png" alt="">
+  </div>
+
+
+  
+  <div class="container-fluid mt-5 mb-5">
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-9 col-sm-6 col-md-4 col-lg-3 ">
+        <div class="main  ">
+           
+
+            <div class="app position-relative d-flex justify-content-end">
+                <div class="app1">
+                    
+                </div>
+                <ul class="position-absolute me-3 mt-3">
+                    <li class="shadow li11" data-bs-toggle="modal" data-bs-target="#arrival"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="shadow li12"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li class="shadow li13"  ><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                </ul>
+               
+            </div>
+
+            <div class="content text-center">
+                <h5 class="card-title mac ">Macadamia Nuts</h5>
+                
+                <p class="card-text tm"><small class="text-muted tm1">Shop</small></p>
+                <p class="card-text pr mb-3">$25.00-$80.00</p>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+      <div class="main border ">
+         
+
+          <div class="app position-relative d-flex justify-content-end">
+              <div class="app1" id="ap1">
+                  
+              </div>
+              <ul class="position-absolute me-3 mt-3">
+                  <li class="shadow li11" data-bs-toggle="modal" data-bs-target="#arrival"><i class="fa fa-search" aria-hidden="true"></i></li>
+                  <li class="shadow li12"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                  <li class="shadow li13"  ><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+              </ul>
+             
+          </div>
+
+          <div class="content text-center">
+              <h5 class="card-title mac">Fresh Organic Fruits</h5>
+              
+              <p class="card-text tm"><small class="text-muted tm1">Shop</small></p>
+              <p class="card-text pr mb-3">$7.00-$75.00</p>
+          
+          </div>
+      </div>
+  </div>
+
+
+  <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+    <div class="main border ">
+       
+
+        <div class="app position-relative d-flex justify-content-end">
+            <div class="app1" id="ap2">
+                
+            </div>
+            <ul class="position-absolute me-3 mt-3">
+                <li class="shadow li11" data-bs-toggle="modal" data-bs-target="#arrival"><i class="fa fa-search" aria-hidden="true"></i></li>
+                <li class="shadow li12"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                <li class="shadow li13"  ><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+            </ul>
+           
+        </div>
+
+        <div class="content text-center">
+            <h5 class="card-title mac">Fresh Vegetables</h5>
+            
+            <p class="card-text tm"><small class="text-muted tm1">Shop</small></p>
+            <p class="card-text pr mb-3">$2.00-$10.00</p>
+        
+        </div>
+    </div>
+</div>
+        
+            
+<div class="col-9 col-sm-6 col-md-4 col-lg-3">
+  <div class="main border position-relative">
+     
+     <span class="sale position-absolute">Sale</span>
+      <div class="app position-relative d-flex justify-content-end">
+          <div class="app1" id="ap3">
+              
+          </div>
+          <ul class="position-absolute me-3 mt-3">
+              <li class="shadow li11" data-bs-toggle="modal" data-bs-target="#arrival"><i class="fa fa-search" aria-hidden="true"></i></li>
+              <li class="shadow li12"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+              <li class="shadow li13"  ><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+          </ul>
+         
+      </div>
+
+      <div class="content text-center">
+          <h5 class="card-title mac">Red Dragon Fruit 300ml</h5>
+          
+          <p class="card-text tm"><small class="text-muted tm1">Shop</small></p>
+          <p class="card-text pr mb-3"><span class="cut">$20.00</span> $18.00</p>
+      
+      </div>
+  </div>
+</div>
+
+<div class="col-9 col-sm-6 col-md-4 col-lg-3">
+  <div class="main border ">
+     
+
+      <div class="app position-relative d-flex justify-content-end">
+          <div class="app1" id="ap4">
+              
+          </div>
+          <ul class="position-absolute me-3 mt-3">
+              <li class="shadow li11" data-bs-toggle="modal" data-bs-target="#arrival"><i class="fa fa-search" aria-hidden="true"></i></li>
+              <li class="shadow li12"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+              <li class="shadow li13"  ><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+          </ul>
+         
+      </div>
+
+      <div class="content text-center">
+          <h5 class="card-title mac">Wild Pecan Nuts</h5>
+          
+          <p class="card-text tm"><small class="text-muted tm1">Shop</small></p>
+          <p class="card-text pr mb-3">$6.00-$25.00</p>
+      
+      </div>
+  </div>
+</div>
+
+<div class="col-9 col-sm-6 col-md-4 col-lg-3">
+  <div class="main border ">
+     
+
+      <div class="app position-relative d-flex justify-content-end">
+          <div class="app1" id="ap5">
+              
+          </div>
+          <ul class="position-absolute me-3 mt-3">
+              <li class="shadow li11" data-bs-toggle="modal" data-bs-target="#arrival"><i class="fa fa-search" aria-hidden="true"></i></li>
+              <li class="shadow li12"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+              <li class="shadow li13"  ><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+          </ul>
+         
+      </div>
+
+      <div class="content text-center">
+          <h5 class="card-title mac">Betteraves BIO</h5>
+          
+          <p class="card-text tm"><small class="text-muted tm1">Shop</small></p>
+          <p class="card-text pr mb-3">$5.00-$20.00</p>
+      
+      </div>
+  </div>
+</div>
+
+
+ <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+  <div class="main border ">
+     
+
+      <div class="app position-relative d-flex justify-content-end">
+          <div class="app1" id="ap6">
+              
+          </div>
+          <ul class="position-absolute me-3 mt-3">
+              <li class="shadow li11 " data-bs-toggle="modal" data-bs-target="#arrival"><i class="fa fa-search" aria-hidden="true" ></i></li>
+              <li class="shadow li12"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+              <li class="shadow li13"  ><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+          </ul>
+         
+      </div>
+
+      <div class="content text-center">
+          <h5 class="card-title mac">Fresh Beef 1kg</h5>
+          
+          <p class="card-text tm"><small class="text-muted tm1">Shop</small></p>
+          <p class="card-text pr mb-3">$10.00-$35.00</p>
+      
+      </div>
+  </div>
+</div>
+
+
+<div class="col-9 col-sm-6 col-md-4 col-lg-3">
+  <div class="main border ">
+     
+
+      <div class="app position-relative d-flex justify-content-end">
+          <div class="app1" id="ap7">
+              
+          </div>
+          <ul class="position-absolute me-3 mt-3">
+              <li class="shadow li11 " data-bs-toggle="modal" data-bs-target="#arrival"><i class="fa fa-search" aria-hidden="true" ></i></li>
+              <li class="shadow li12"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+              <li class="shadow li13"  ><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+          </ul>
+         
+      </div>
+
+      <div class="content text-center">
+          <h5 class="card-title mac">Fine Cut Orange</h5>
+          
+          <p class="card-text tm"><small class="text-muted tm1">Shop</small></p>
+          <p class="card-text pr mb-3">$10.00-$30.00</p>
+      
+      </div>
+  </div>
+</div>
+
+
+
+    </div>
+  </div>
+      
+
+
+
+    <!-- Modal -->
+<div class="modal fade" id="arrival" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg ">
+    <div class="modal-content">
+      <!-- <div class="modal-header"> -->
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- </div> -->
+      <div class="modal-body">
+        <div class="container ">
+          <div class="row">
+
+            <div class="col-lg-6 mb-3">
+
+              <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="image/1-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/3-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/4-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/5-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/6-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="container-fluid">
+
+                <div class="row g-2">
+                  <div class="col-3">
+                    <img src="image/1-600x600.jpg" class="d-block w-100 border " alt="...">
+                  </div>
+
+                  <div class="col-3">
+                    <img src="image/3-600x600.jpg" class="d-block w-100 border" alt="...">
+                  </div>
+
+                  <div class="col-3">
+                    <img src="image/4-600x600.jpg" class="d-block w-100 border" alt="...">
+                  </div>
+
+                  <div class="col-3">
+                    <img src="image/5-600x600.jpg" class="d-block w-100 border" alt="...">
+                  </div>
+
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <div class="col-lg-6">
+              <div class="inf">
+
+                <h1 class="fs-3 wild ">WILD PECAN NUTS</h1>
+
+                <div class="both">
+                  <div class="star ">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <p class="rev d-inline">(5 customer reviews)</p>
+                  </div>
+                </div>
+
+                <p class="nut mt-3">Wild pecan nuts are good source of iron. 
+                   It help to prevent cancer and heart diseases.</p>
+
+                   <div class="line mb-3"></div>
+
+                   <div class="pr1 fs-4">$6.00 – $25.00</div>
+
+                   <div class="size d-flex mt-3 mb-3">
+
+                    <div class="size1 me-2 fw-bold">Size</div>
+                    <div class="size2 ">
+                      <span class="kg1  me-1">1kg</span>
+                      <span class="kg2  me-1">200g</span>
+                      <span class="kg3  me-1">500g</span>
+                      <span class="clr  me-1">Clear</span>
+                    </div>
+
+                   </div>
+
+                   <p class="pr2"><span class="cut2">$30.00</span> $25.00</p>
+
+                   <p class="stock">193 in stock</p>
+
+                   <div class="pnmain d-flex mb-3">
+
+                    <div class="pn d-flex align-items-center  border">
+                      <i class="fa fa-plus ms-2  me-1" aria-hidden="true"></i>
+                      <div class="upl"></div>
+                      <div class="one fs-4 ms-2 me-2">1</div>
+                      <div class="upl"></div>
+                      <i class="fa fa-minus ms-1 me-2" aria-hidden="true"></i>
+                     </div>
+  
+                     <button type="button" class="btn large btn-lg ms-3" id="adt">Add To Cart</button>
+  
+
+                   </div>
+
+                   <p class="widh">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i> Add To Wishlist
+                   </p>
+
+                   <p class="share">
+                    SHARE: <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
+                    <i class="fa fa-pinterest" aria-hidden="true" id="pin"></i>
+                    <i class="fa fa-twitter" aria-hidden="true" id="tw"></i>
+                    <i class="fa fa-whatsapp" aria-hidden="true" id="wh"></i>
+                   </p>
+
+                   
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+      <!--  Brocoli  -->
+
+
+      <div class="card  text-white mb-5" id="brocoli">
+        <!-- <img src="image/img-banner2.jpg" class="card-img" alt="..."> -->
+        <div class="img-overlay w-50" id="ov1">
+          <h5 class="card-title" id="nat">Natural Product</h5>
+          <p class="card-text" id="off">SAVE 40% OFF</p>
+          <p class="card-text" id="rose">Broccoli Roses, Alway Fresh And Delicious. 100% Organic</p>
+          <button type="button" class="btn btn-outline-light">Shop Now</button>
+        </div>
+      </div>
+       
+
+      <!--  Brocoli Ends -->
+
+
+      <!--   Four Person -->
+
+
+      <p class="desc text-center">My Choosee Us </p>
+
+      <p class="cate text-center">WHY PEOPLE LOVE AMINO</p>
+
+      <div class="leaf text-center mb-5">
+        <img src="image/bg-title.png" alt="">
+      </div>
+
+
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+
+            <div class="container">
+              <div class="row g-3">
+
+                <div class="col-lg-6">
+
+                  <div class="card  ">
+                    <div class="row g-0">
+                      <div class="col-sm-3 align-self-center text-center ">
+                        <img src="image/ttm_3.png" class="img-fluid rounded-start " alt="...">
+                      </div>
+                      <div class="col-sm-9">
+                        <div class="card-body" id="detail">
+
+                          <div class="star mb-3">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        
+                          </div>
+                          
+                          <p class="card-text " id="save">
+                          <p class="card-text " id="save">
+                            Save time going to the grocery store or remembering to pick up   
+                              your produce at a specific time and location. Delivery to yourdoor 
+                              is included!
+
+                          </p>
+
+                          <p class="aus">Aussiemines</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+
+                  <div class="card  ">
+                    <div class="row g-0">
+                      <div class="col-sm-3 align-self-center text-center ">
+                        <img src="image/ttm_4.png" class="img-fluid rounded-start " alt="...">
+                      </div>
+                      <div class="col-sm-9">
+                        <div class="card-body" id="detail">
+
+                          <div class="star mb-3">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        
+                          </div>
+                          
+                          <p class="card-text" id="save">
+                            Having produce delivered to your home or office on a set
+                            frequency is essential to obtaining the recommended daily
+                            servings of fruits and vegetables.
+
+                          </p>
+
+                          <p class="aus">Sandy Wilcke</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="container">
+
+              <div class="row g-3">
+
+                <div class="col-lg-6">
+                  <div class="card ">
+                    <div class="row g-0">
+                      <div class="col-sm-3 align-self-center text-center ">
+                        <img src="image/ttm_1.png" class="img-fluid rounded-start " alt="...">
+                      </div>
+                      <div class="col-sm-9">
+                        <div class="card-body" id="detail">
+
+                          <div class="star mb-3">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        
+                          </div>
+                          
+                          <p class="card-text" id="save">
+                            Having produce delivered to your home or office on a set
+                            frequency is essential to obtaining the recommended daily
+                            servings of fruits and vegetables.
+                            
+
+                          </p>
+
+                          <p class="aus">Sandy Wilcke</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="card  ">
+                    <div class="row g-0">
+                      <div class="col-sm-3 align-self-center text-center ">
+                        <img src="image/ttm_2.png" class="img-fluid rounded-start " alt="...">
+                      </div>
+                      <div class="col-sm-9">
+                        <div class="card-body" id="detail">
+
+                          <div class="star mb-3">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        
+                          </div>
+                          
+                          <p class="card-text" id="save">
+                            Each delivery comes with the option to view and make changes
+                            to the items in your delivery. Also use your Never Send List to omit items you don't want
+                            
+
+                          </p>
+
+                          <p class="aus">Sandy Wilcke</p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!-- Four Person Ends -->
+
+      <!--  Blog   -->
+
+
+      <p class="desc text-center mt-5">Read Our Blog</p>
+
+      <p class="cate text-center">LATEST NEWS</p>
+
+      <div class="leaf text-center mb-5">
+        <img src="image/bg-title.png" alt="">
+      </div>
+
+
+      <div class="container-fluid mb-5">
+
+        <div class="row g-4" id="blog">
+
+          <div class="col-sm-9 col-md-9 col-lg-4 ">
+
+            <div class="news ">
+              
+              <div class="new1  position-relative">
+                <span class="snacks position-absolute">SNACKS</span>
+                <div class="news2 border">
+
+                </div>
+              </div>
+
+              <div class="content2">
+
+                <p class="spring mt-3">
+                  Spring Dress Try - On Haul
+                </p>
+
+                <p class="year mb-4">
+                  This is one of my favorite dress designers (has been for years!).
+                  Every detail in this dress (30%...
+                </p>
+
+              </div>
+
+              <div class="card-footer ">
+                April 24, 2021 <span class="ad">by admin.</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-sm-9 col-md-9 col-lg-4 ">
+
+            <div class="news ">
+              
+              <div class="new1  position-relative">
+                <span class="snacks position-absolute">CHIPS</span>
+                <div class="news2 border" id="nw2">
+
+                </div>
+              </div>
+
+              <div class="content2">
+
+                <p class="spring mt-3">
+                  Aliquam vel ante mattis
+                </p>
+
+                <p class="year mb-4">
+                  Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium
+                  arcu ex. Aenean posuere libero eu augue condimentum…
+                </p>
+
+              </div>
+
+              <div class="card-footer ">
+                November 29, 2021 <span class="ad">by admin.</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-sm-9 col-md-9 col-lg-4 ">
+            <div class="news ">
+              
+              <div class="new1 d-flex  align-items-start position-relative">
+                <span class="snacks1 position-absolute">
+                  <span class="snacks11">COMPANY</span>
+                  <span class="snacks11">WORDPRESS</span>
+                </span>
+                
+                <div class="news2 border" id="nw3">
+
+                </div>
+              </div>
+
+              <div class="content2">
+
+                <p class="spring mt-3">
+                  Praesent imperdiet going 
+                </p>
+
+                <p class="year mb-4">
+                  Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium
+                  arcu ex. Aenean posuere libero eu augue condimentum…
+
+                </p>
+
+              </div>
+
+              <div class="card-footer ">
+                July 13, 2021 <span class="ad">by admin.</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+      <!--  Blog  Ends  -->
+
+
+
+      <!--fixed-->
+
+      <a href="#ci1" id="ifixic" ><i class="fa fa-angle-up " aria-hidden="true" id="fixic"></i></a>
+
+
+
+      <!--   Footer   -->
+
+      <div class="footer1 " id="ft1">
+
+        <div class="container pt-5 pb-3">
+
+          <div class="row g-3">
+
+            <div class="col-md-12 col-lg-5 ">
+
+              <div class="footer11">
+                <h4 class="touch text-white mb-3">LET'S KEEP IN TOUCH</h4>
+                <p class="late mb-4">Sign up for our e-mail to get latest news.</p>
+              </div>
+              <div class="input-group mb-3" id="in">
+                <input type="text" class="form-control " id="fc1" placeholder="Enterv Your Email Address..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
+              </div>
+
+            </div>
+
+            <div class="d-none d-md-block d-lg-block col-md-4 col-lg-3 about ">
+              
+              <h6 class="about1 mb-3">About Us</h6>
+
+              <ul>
+                <li>M-F 9am-5pm EST</li>
+                <li><i class="fa fa-map-marker me-1" aria-hidden="true"></i>  
+                  Fox Mountain Rd, South Fork, CO 81154, USA</li>
+                <li><i class="fa fa-phone me-1" aria-hidden="true"></i> +0123.456.8386</li>
+                <li><i class="fa fa-envelope-o me-1" aria-hidden="true"></i> support@posthemes.com</li>
+              </ul>
+            </div>
+
+            <div class="d-none d-md-block d-lg-block col-md-4 col-lg-2 extras ">
+
+              <h6 class="about1 mb-3">Extras</h6>
+
+              <ul>
+                <li>Wishlist</li>
+                <li>Contact Us</li>
+                <li>My Account</li>
+              </ul>
+              
+            </div>
+
+            <div class="d-none d-md-block d-lg-block col-md-4 col-lg-2 info ">
+              
+              <h6 class="about1 mb-3">information</h6>
+
+              <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Support center</li>
+                <li>Customer Support</li>
+              </ul>
+            </div>
+
+            <!---for mediumscreen accordion-->
+
+
+            <div class="col-12   d-md-none">
+
+              <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      About Us
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <ul>
+                        <li>M-F 9am-5pm EST</li>
+                        <li><i class="fa fa-map-marker me-1" aria-hidden="true"></i>  
+                          Fox Mountain Rd, South Fork, CO 81154, USA</li>
+                        <li><i class="fa fa-phone me-1" aria-hidden="true"></i> +0123.456.8386</li>
+                        <li><i class="fa fa-envelope-o me-1" aria-hidden="true"></i> support@posthemes.com</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Extras
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <ul>
+                        <li>Wishlist</li>
+                        <li>Contact Us</li>
+                        <li>My Account</li>
+                      </ul>
+                      
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      information
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <ul>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Support center</li>
+                        <li>Customer Support</li>
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+            
+
+
+
+            
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="footer2 pt-4 pb-4" id="ft2">
+
+        <div class="container">
+
+          <div class="row justify-content-center g-3 ">
+
+            <div class="col-sm-6 col-lg-3 ">
+              <div class="ficon text-center">
+                <i class="fa fa-facebook" aria-hidden="true" id="ficon1"></i>
+                <i class="fa fa-twitter" aria-hidden="true" id="ficon2"></i>
+                <i class="fa fa-instagram" aria-hidden="true" id="ficon3"></i>
+                <i class="fa fa-google" aria-hidden="true" id="ficon4"></i>
+              </div>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-5  ">
+              <p class="copy text-center ">
+                Copyright by PlazaThemes. All Rights Reserved.
+              </p>
+            </div>
+
+            <div class="col-sm-8 col-lg-4 text-center ">
+              <img src="image/img-payment.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!--   Footer Ends   -->
+
+
+
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="amino.css">
+</head>
+<body>
+    
+
+
+    <!---navbar start-->
+
+  <div class="navbar1 pt-4 pb-4 d-none d-lg-block shadow sticky-top">
+    <div class="container-fluid ">
+      <div class="row  align-items-center">
+
+        <div class=" col-2 ">
+          <div class="amino text-center">
+            <a href="index.html">
+              <img src="image/logo_amino.png" class="img-fluid">
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="col-8 ">
+          <div class="list1 d-flex justify-content-center">
+            
+            <ul class="">
+              <li class="li21">
+                <a href="index.html">Home</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="product.html">Product</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="blog.html">Blog</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="about.html">About Us</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="icon text-center">
+           <i class="fa fa-search  me-2" aria-hidden="true"
+           data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"></i> 
+
+            <i class="fa fa-user-o ms-2 me-2" aria-hidden="true"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop1"></i>
+
+            <i class="fa fa-heart-o ms-2 me-2 position-relative" aria-hidden="true">
+              <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill ">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </i>
+
+            <i class="fa fa-shopping-cart ms-2 position-relative" aria-hidden="true">
+              <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill ">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!--********offcanvas search Modal user*****-->
+
+    <div class="offcanvas offcanvas-top h-50" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body ">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 ">
+
+              <div class="input-group ig1 mb-5 d-flex justify-content-center align-items-center mb-3">
+                
+                <input type="text" id="text1" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                <i class="fa fa-search ms-2 fs-3" aria-hidden="true"></i>
+              </div>
+
+              <div class="input-group1">
+                <p class="p1">Popular searches :</p>
+                <ul class="d-flex">
+                  <li class=" me-1">organic</li>
+                  <li class="ms-1 me-1">fruit</li>
+                  <li class="ms-1 me-1">juice</li>
+                  <li class="ms-1 me-1">almond</li>
+                  <li class="ms-1 me-1">apple</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+<div class="modal fade " id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      
+
+        <button type="button " class="btn-close btn1" data-bs-dismiss="modal" aria-label="Close"></button>
+      
+      <div class="modal-body ">
+
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="tabstyle" role="presentation">
+            <a class="nav-link active "  data-bs-toggle="pill" href="#pills-home"  role="tab" >Login</a>
+          </li>
+          <li class="tabstyle" role="presentation">
+            <a class="nav-link "  data-bs-toggle="pill" href="#pills-profile"  role="tab" >
+              Register</a>
+          </li>
+          
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            
+            <form action="" class="row needs-validation justify-content-center">
+
+              <div class="col-sm-9">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control fcl" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+            
+
+              
+                <label for="inputPassword" class="col-form-label">Password</label>
+                <div class="input-group has-validation mb-3">
+                  <input type="password" class="form-control fcl" id="inputPassword" required>
+                </div>
+              
+
+              <div class=" text-center d-flex justify-content-between">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Remember me
+                  </label>
+                </div>
+
+                <p class="lost">Lost Password?</p>
+              </div>
+
+              <div class="lg text-center">
+                <button class="btn btn-primary" type="submit" id="mit">LOG IN</button>
+              </div>
+
+            </div>
+
+            </form>
+          </div>
+
+
+
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+            <form action="" class="row needs-validation justify-content-center">
+
+              <div class="col-sm-9">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation mb-2">
+                  <input type="text" class="form-control fcl" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+
+
+                <label for="validationCustomUsername1" class="form-label">Email</label>
+                <div class="input-group has-validation ">
+                     <input type="email" class="form-control fcl" id="validationCustomUsername1" aria-describedby="inputGroupPrepend" required>
+                 <div class="invalid-feedback">
+                   Please choose a username.
+                   </div>
+                </div>
+            
+
+              
+                <label for="inputPassword" class="col-form-label">Password</label>
+                <div class="input-group has-validation mb-3">
+                  <input type="password" class="form-control fcl" id="inputPassword" required>
+                  <div class="invalid-feedback">
+                    Please enter a password.
+                  </div>
+                </div>
+
+
+                <p class="pers text-center">
+                  Your personal data will be used to support your experience throughout 
+                  this website, to manage access to your account, 
+                  and for other purposes described in our privacy policy.
+                </p>
+              
+
+              
+
+              <div class="lg text-center">
+                <button class="btn btn-primary" type="submit" id="mit">Register</button>
+              </div>
+
+            </div>
+
+            </form>
+          </div>
+        </div>
+
+
+        
+
+
+
+
+        
+        
+
+        
+      </div>
+
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+
+    <!--******** offcanvas search Modal user ENDS *******-->
+
+  <nav class="navbar bg-white navbar-expand-lg pt-4 pb-4 navbar-light sticky-top shadow d-block d-lg-none fixed-top ">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Amino</a> -->
+      <div class="col-3 first ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!-- <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5> -->
+            <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <!-- </div> -->
+          <p class="head text-center pb-3">MENU</p>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 ">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="blog.html">
+                  Blog
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html">
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <i class="fa fa-search ms-2 me-2 fs-4" 
+          data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-hidden="true"></i>
+      </div>
+
+
+      <div class="col-6 ">
+        <div class="amino text-center">
+          <a href="index.html">
+            <img src="image/logo_amino.png" class="img-fluid">
+          </a>
+          
+        </div>
+      </div>
+
+      <div class="col-3 ">
+        <div class="icon text-end">
+         <i class="fa fa-user-o me-1" aria-hidden="true"
+         data-bs-toggle="modal" data-bs-target="#staticBackdrop1"></i> 
+          <i class="fa fa-shopping-cart me-2 position-relative" aria-hidden="true">
+            <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill ">
+              0
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </i>
+        </div>
+      </div>
+
+      
+    </div>
+    
+  </nav>
+
+
+
+
+  <!-------********Navbar Ends**********-->
+
+
+  <!--************  Header    *************-->
+  <div class="head11 text-center pt-5 pb-5" id="pheader">
+
+   
+    <p class="cntus1"><a href="index.html">Home</a> <i class="fa fa-angle-right ms-1 me-1" aria-hidden="true"></i>
+    shop <i class="fa fa-angle-right ms-1 me-1" aria-hidden="true"></i> Flavored Milk <i class="fa fa-angle-right ms-1 me-1" aria-hidden="true"
+    ></i> <span class="fre">Fresh Apple 1Kg</span> </p>
+    
+  </div>    
+
+
+  <!--**********  Header Ends  ***********-->
+
+
+
+  <div class="container mt-5" id="pdc">
+
+    <div class="row g-3 mb-5" id="pdc1">
+
+        <!-- <div class="col-lg-6">
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" id="cia">
+                    <img src="image/1.jpg" class="d-block w-100 cia1" alt="...">
+                  </div>
+                  <div class="carousel-item" id="cia">
+                    <img src="image/2.jpg" class="d-block w-100 cia1" alt="...">
+                  </div>
+                  <div class="carousel-item" id="cia">
+                    <img src="image/3.jpg" class="d-block w-100 cia1" alt="...">
+                  </div>
+                  <div class="carousel-item" id="cia">
+                    <img src="image/4.jpg" class="d-block w-100 cia1" alt="...">
+                  </div>
+                  <div class="carousel-item" id="cia">
+                    <img src="image/5.jpg" class="d-block w-100 cia1" alt="...">
+                  </div>
+                  <div class="carousel-item" id="cia">
+                    <img src="image/6.jpg" class="d-block w-100 cia1" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true" id="ccpi1"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true" id="ccpi2"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+              <div class="div6">
+
+                <div class="row g-2">
+
+                    <div class="col-2 col-md-4 col-lg-2">
+                        
+                        <div class="div61 ">
+                            <img src="image/1-150x150.jpg" class="w-100 ">
+                        </div>
+                    </div>
+
+                    <div class="col-2 col-md-4 col-lg-2">
+                        <div class="div61 ">
+                            <img src="image/2-150x150.jpg" class="w-100">
+                        </div>
+                    </div>
+
+                    <div class="col-2 col-md-4 col-lg-2">
+                        <div class="div61 ">
+                            <img src="image/3-150x150.jpg" class="w-100">
+                        </div>
+                    </div>
+
+                    <div class="col-2 col-md-4 col-lg-2">
+                        <div class="div61 ">
+                            <img src="image/4-150x150.jpg" class="w-100">
+                        </div>
+                    </div>
+
+                    <div class="col-2 col-md-4 col-lg-2">
+                        <div class="div61 ">
+                            <img src="image/5-150x150.jpg" class="w-100">
+                        </div>
+                    </div>
+
+                    <div class="col-2 col-md-4 col-lg-2">
+                        <div class="div61 ">
+                            <img src="image/6-150x150.jpg" class="w-100">
+                        </div>
+                    </div>
+                    
+                </div>
+              </div>
+           
+
+
+        </div> -->
+
+        <!--left side recreate-->
+
+        <div class="col-lg-6">
+
+          <div id="carouselExampleIndicators"  class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators " id="cei">
+    
+              <div class="row g-2">
+    
+                <div class="col-2 ">
+                  <button type="button " data-bs-target="#carouselExampleIndicators" id="btce1" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1">
+                    <img src="image/1-150x150.jpg" class="w-100 d-block bfci" alt="">
+                  </button>
+                </div>
+    
+                <div class="col-2 ">
+                  <button type="button " data-bs-target="#carouselExampleIndicators" id="btce1" data-bs-slide-to="1" aria-label="Slide 2" class="">
+                    <img src="image/2-150x150.jpg" class="w-100 d-block bfci" alt="">
+                  </button>
+                </div>
+    
+                <div class="col-2 ">
+                  <button type="button " data-bs-target="#carouselExampleIndicators" id="btce1" data-bs-slide-to="2" aria-label="Slide 3" class="">
+                    <img src="image/3-150x150.jpg" class="w-100 d-block bfci" alt="">
+                  </button>
+                </div>
+    
+                <div class="col-2 "> 
+                  <button type="button " data-bs-target="#carouselExampleIndicators" id="btce1" data-bs-slide-to="3" aria-label="Slide 4" class="">
+                    <img src="image/4-150x150.jpg" class="w-100 d-block bfci" alt="">
+                  </button>
+                </div>
+    
+                <div class="col-2 ">
+                  <button type="button " data-bs-target="#carouselExampleIndicators" id="btce1" data-bs-slide-to="4" aria-label="Slide 5" class="">
+                    <img src="image/5-150x150.jpg" class="w-100 d-block bfci" alt="">
+                  </button>
+                </div>
+    
+                <div class="col-2 ">
+                  <button type="button " data-bs-target="#carouselExampleIndicators" id="btce1" data-bs-slide-to="5"data-bs-slide-to="5" aria-label="Slide 6" class="">
+                    <img src="image/6-150x150.jpg" class="w-100 d-block bfci" alt="" >
+                  </button>
+                </div>
+    
+    
+              </div>
+              
+            </div>
+            <div class="carousel-inner ">
+              <div class="carousel-item active" id="cia">
+                <img src="image/1.jpg" class="d-block w-100 cia1" alt="...">
+              </div>
+              <div class="carousel-item" id="cia">
+                <img src="image/2.jpg" class="d-block w-100 cia1" alt="...">
+              </div>
+              <div class="carousel-item" id="cia">
+                <img src="image/3.jpg" class="d-block w-100 cia1" alt="...">
+              </div>
+              <div class="carousel-item" id="cia">
+                <img src="image/4.jpg" class="d-block w-100 cia1" alt="...">
+              </div>
+              <div class="carousel-item" id="cia">
+                <img src="image/5.jpg" class="d-block w-100 cia1" alt="...">
+              </div>
+              <div class="carousel-item " id="cia">
+                <img src="image/6.jpg" class="d-block w-100 cia1" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    
+        </div>
+
+
+        <!--left side recreate end-->
+              
+
+
+        <!--right side-->
+
+        <div class="col-lg-6">
+
+             <div class="inf1">
+
+                <h1 class="fs-3 wild mb-3">FRESH APPLE 1KG</h1>
+
+                <div class="both mb-2">
+                  <div class="star ">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <p class="rev d-inline text-secondary">(5 customer reviews)</p>
+                  </div>
+                </div>
+
+                <div class="pr1 fs-4">$4.00 – $40.00</div>
+
+                <p class="nut1 mt-2 mb-4">Sapodillas tend to be found in the exotics isle of many retailers. 
+                    They are not that common except in their countries of origin which is southern Mexico 
+                    and Central America (Panama, Peurto Rica). Where they are endemic, the tree is known as
+                     níspero in the hispanic language. You find the tree in low and coastal forests.</p>
+
+                   <div class="line  mb-4"></div>
+
+                  
+
+                   <div class="sizem d-flex mt-4 mb-3">
+
+                    <div class="size1 fw-bold me-3">Size</div>
+                    <div class="size2 ">
+                      <span class="kg_1 fw-bold me-1">1kg</span>
+                      <span class="kg2  me-1">2kg</span>
+                      <span class="kg2  me-1">200g</span>
+                      <span class="kg3  me-1">500g</span>
+                      <span class="clr  me-1">Clear</span>
+                    </div>
+
+                   </div>
+
+                   <p class="pr2">$20.00</p>
+
+                   <p class="stock">336 in stock</p>
+
+                   <div class="pnmain1 d-flex mb-3">
+
+                    <div class="pn d-flex align-items-center  border">
+                      <div class="ps-1 pe-1"><i class="fa fa-plus text-secondary" aria-hidden="true"></i></div>
+                      <div class="upl"></div>
+                      <div class="one fs-4 ps-2 pe-2 ms-1 me-1 text-secondary">1</div>
+                      <div class="upl"></div>
+                      <div class="ps-1 pe-1"><i class="fa fa-minus text-secondary" aria-hidden="true"></i></div>
+                     </div>
+  
+                     <button type="button" class="btn large1 btn-lg ms-3" id="adt1">Add To Cart</button>
+  
+
+                   </div>
+
+                   <p class="widh mb-4">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i> Add To Wishlist
+                   </p>
+
+                   <div class="line  mb-4"></div>
+
+                   <p class="sku">
+                    <span class="sku1">SKU:</span> Fresh_Apple
+                   </p>
+
+                   <p class="sku">
+                    <span class="sku1">CATEGORIES: </span> Asparagus, Beet Juice, Crackers, Flavored Milk, Full Cream Milk, 
+                    Grape Juice, Jam, Lactose-Free Milk, Milks & Eggs, Muffins, Plain Chicken, Potato Bread
+                   </p>
+
+                   <p class="sku">
+                    <span class="sku1">TAG: </span>Apple
+                   </p>
+
+                   <p class="share">
+                    SHARE: <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
+                    <i class="fa fa-pinterest" aria-hidden="true" id="pin"></i>
+                    <i class="fa fa-twitter" aria-hidden="true" id="tw"></i>
+                    <i class="fa fa-whatsapp" aria-hidden="true" id="wh"></i>
+                   </p>
+
+                   
+              </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--/////////  navpills   ///////-->
+
+    <div class="addition1 mt-5 mb-5">
+      <ul class="nav nav-pills  justify-content-center" id="pills-tab" role="tablist">
+        <li class="tabstyle1" role="presentation">
+          <a class="nav-link active nlink"  data-bs-toggle="pill" href="#pills-home1"  role="tab" >
+            DESCRIPTION</a>
+        </li>
+        <li class="tabstyle1" role="presentation">
+          <a class="nav-link nlink"  data-bs-toggle="pill" href="#pills-profile1"  role="tab" >
+            ADDITIONAL INFORMATION</a>
+        </li>
+        <li class="tabstyle1" role="presentation">
+          <a class="nav-link nlink"  data-bs-toggle="pill" href="#pills-contact1"  role="tab" >
+            REVIEWS (5)</a>
+        </li>
+        
+      </ul>
+
+      <div class="tab-content border" id="pills-tabContent">
+        <div class="tab-pane fade show active tpf" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab">
+
+          <h5 class="sweet">Fresh Fruit Sweet Sapodilla Wholesale</h5>
+
+          <p class="sapo">Sapodillas tend to be found in the exotics isle of many retailers.
+             They are not that common except in their countries of origin which is southern 
+             Mexico and Central America (Panama, Peurto Rica). Where they are endemic, the 
+             tree is known as níspero in the hispanic language. You find the tree in low and 
+             coastal forests.</p>
+
+          <p class="sapo">
+            The tree is mainly grown for shade, its fruit which we discuss briefly later 
+            and as an ornamental. The latex is the main source of chicle which is used in 
+            the production of a gum base for chewing gum.
+          </p>
+
+          <p class="sapo">
+            The species name is Manilkara zapota (L.) 
+            P. van Rogen and is found in the Sapotaceae family.
+          </p>
+
+          <p class="sapo">
+            My Indian friends know them as Chikoo and they feel the fruit rivals avocado for 
+            healthy nutrition which is saying something. A typical cultivar is ‘Tikal’.
+          </p>
+
+          <h6 class="di">Description Of The Sapodilla Fruit</h6>
+
+          <p class="sapo">
+            A ripe sapodilla should be sweet with a soft pulpy rusty yellow-red flesh. The fruit as you can see from the photo is globose, conical or oval with one or more seeds. It weighs 75–200 g, ranging from 5 to 9 cm in diameter. 
+            The skin is a rusty or burnished orange. The flavour is quite unique too.
+          </p>
+
+          <p class="sapo">
+            It is normally eaten fresh, but sometimes it is served as candy, dehydrated slices, jelly and juices
+          </p>
+
+          <h6 class="di">Cultivation</h6>
+
+          <p class="sapo">
+            Difficult as there are so many insects which attack the fruit and trees. Manilkara zapota is an evergreen tree growing to 25 m (82ft.) by 25 m (82ft) at a relatively slow rate. It is hardy to zone (UK) 10 but is frost tender so it can only really be seen on the Scilly Islands. 
+            The flowers are pollinated by Insects.It is noted for attracting wildlife.
+          </p>
+          
+          <p class="sapo">
+            Suitable soils are: light (sandy), medium (loamy) and heavy (clay) soils. The tree prefers well-drained soil but can grow well enough in impoverished, nutritionally poor soil. 
+            Suitable pH: acid and neutral soils but does grow in very acid and saline soils.
+          </p>
+
+          <p class="sapo">
+            Does not grow in shade. It prefers dry or moist soil and can tolerate drought. The plant can tolerate strong winds but not maritime exposure.
+          </p>
+
+          <div class="gallery">
+            <!-- <div class="gallery1 border">
+              <img src="image/1.jpg" class="w-100">
+            </div> -->
+            <div class="row">
+
+              <div class="col-6">
+                <img src="image/1.jpg" class="w-100">
+              </div>
+  
+              <div class="col-6">
+                <img src="image/2.jpg" class="w-100">
+              </div>
+
+            </div>
+            
+          </div>
+
+          <h6 class="di">Nutritional Benefits Of The Fruit</h6>
+
+          <p class="sapo">The main nutritional benefit comes from its high content of antioxidants especially vitamin C although it doesn’t seem as high as an orange or blackcurrant on a weight basis.</p>
+
+          <p class="sapo">The main polyphenols are:- methyl chlorogenate, dihydromyricetin, quercitrin, myricitrin, (+)-catechin, (−)-epicatechin, (+)-gallocatechin, and gallic acid. Smaller amounts of methyl 4-O-galloylchlorogenate and 4-O-galloylchlorogenic acid have been found (Ma et al., 2003). These all have some degree of antioxidant potential.</p>
+
+          <p class="sapo">
+            A ‘good’ antioxidant content is not to be ignored as most nutritionists regard antioxidants as suitable vehicles to attack free radicals which are associated with the causes of inflammation, cancers and aging. The fibre content (5.3g/100g) supposedly helps reduce constipation but it’s not a cure otherwise it would be medicine, although I’m not sure that too many other web-sites over emphasize that point. Fibre taken on a regular basis helps to reduce fat absorption, can also mop up free radicals and ensures a healthy digestive system.
+          </p>
+
+          <p class="sapo">
+            Did I mention tannins ? No ? Well these are components in fruit generally which have both anti-microbial and anti-viral properties. Whether there are any specific benefits associated with the sapodilla is still being evaluated but it’s clear some interesting components to be examined.
+          </p>
+
+          <p class="sapo">
+            There is also a reasonable vitamin content too.
+          </p>
+
+          <p class="sapo">
+            Vitamin A (retinol) is of course good for eyes and general metabolism. With a reasonably rich vitamin C content (14.7mg/100g, 24.5 per cent RDA) which keeps cells like leukocytes that combat harmful bacteria and other micro-organisms topped up, there is plenty to be offered.
+          </p>
+
+          <p class="sapo">
+            The iron content is 4% RDA and it is taken in India as way to reduce the risk of anaemia (anemia).
+          </p>
+
+          <p class="sapo">
+            RDA – Recommended Daily Amount
+          </p>
+
+          <p class="sapo">
+            The seeds must be removed before eating as they contain hydrocyanic acid. The older leaves contain poisonous alkaloids.
+          </p>
+
+        </div>
+        
+        
+        
+        <div class="tab-pane fade tpf" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+          <table>
+            <tbody>
+
+              <tr>
+                <th>Brand</th>
+                <td>Bigraphic</td>
+              </tr>
+
+              <tr>
+                <th>Dietary & Lifestyle</th>
+                <td>Organic</td>
+              </tr>
+
+              <tr>
+                <th>Size</th>
+                <td>1 Kg, 2 Kg, 200g, 500g</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+
+
+
+        <div class="tab-pane fade tpf" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+          <h5 class="sweet">5 reviews for Fresh Apple 1Kg</h5>
+
+          <div class="customer d-flex mb-2">
+            <div class="customer1 align-self-center">
+              <img src="image/919a9ee620d06fd30cf10837f294229b.png" class="">
+            </div>
+            <div class="customer2">
+
+              <div class="star ">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p class="demin"><span class="strong">demin</span> - December 1, 2021</p>
+
+              <p class="sapo">
+                Just received my £10 box. Got to say I am very impressed! Looking forward to everything in it.
+              </p>
+
+            </div>
+          </div>
+
+
+          <div class="customer d-flex mb-2">
+            <div class="customer1 align-self-center">
+              <img src="image/919a9ee620d06fd30cf10837f294229b.png" class="">
+            </div>
+            <div class="customer2">
+
+              <div class="star ">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p class="demin"><span class="strong">kaziu</span> - December 1, 2021</p>
+
+              <p class="sapo">
+                I am loving my weekly delivery . So fresh and longer lasting than any supermarket. You have to give this a try </p>
+
+            </div>
+          </div>
+
+          <div class="customer d-flex mb-2">
+            <div class="customer1 align-self-center">
+              <img src="image/919a9ee620d06fd30cf10837f294229b.png" class="">
+            </div>
+            <div class="customer2">
+
+              <div class="star ">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p class="demin"><span class="strong">hardc</span> - December 1, 2021</p>
+
+              <p class="sapo">
+                lovely fresh fruit really good quality definitely worth the money x
+            </div>
+          </div>
+
+          <div class="customer d-flex mb-2">
+            <div class="customer1 align-self-center">
+              <img src="image/919a9ee620d06fd30cf10837f294229b.png" class="">
+            </div>
+            <div class="customer2">
+
+              <div class="star ">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p class="demin"><span class="strong">dmonui</span> - December 1, 2021</p>
+
+              <p class="sapo">
+                Received my 1st order yesterday and it’s great, fantastic service
+            </div>
+          </div>
+
+
+          <div class="customer d-flex mb-2">
+            <div class="customer1 align-self-center">
+              <img src="image/919a9ee620d06fd30cf10837f294229b.png" class="">
+            </div>
+            <div class="customer2">
+
+              <div class="star ">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </div>
+
+              <p class="demin"><span class="strong">iouhx</span> - December 1, 2021</p>
+
+              <p class="sapo">
+                Lovely produce and great value. Who could ask for more?!
+            </div>
+          </div>
+
+
+          <p class="view mt-4">Add A Review</p>
+
+          <p class="sapo">
+            Your email address will not be published. Required fields are marked *
+          </p>
+          
+          <p class="tik">Your rating  <i class="fa fa-star ms-2" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i></p>
+
+            <form class="row g-3">
+
+              <div class="col-12">
+                <label for="exampleFormControlTextarea1" class="form-label">Your review *</label>
+                <textarea class="form-control ftl" id="exampleFormControlTextarea1" rows="3" required></textarea>
+              </div>
+
+              <div class="col-12">
+                <label for="validationDefault01" class="form-label">Name *</label>
+                <input type="text" class="form-control ftl" id="validationDefault01"  required>
+              </div>
+              
+              <div class="col-12">
+                <label for="validationDefaultUsername" class="form-label">Email *</label>
+                <div class="input-group">
+                  <input type="email" class="form-control ftl" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                </div>
+              </div>
+              
+              
+              
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck21" required>
+                  <label class="form-check-label" for="invalidCheck21">
+                    Save my name, email, and website in this browser for the next time I comment.
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary tim" type="submit">SUBMIT</button>
+              </div>
+            </form>
+
+        </div>
+      </div>
+    </div>
+     
+    <!-- nav pills end -->
+
+
+    <!--    sale    -->
+
+
+
+    
+
+      <p class="cate1 fs-2 text-center ">UP-SELLS PRODUCTS</p>
+
+      <div class="leaf text-center mb-5">
+        <img src="image/bg-title.png" alt="">
+      </div>
+
+
+
+
+      <div class="row justify-content-center g-3 mb-5">
+
+        <div class="col-10 col-sm-6 col-md-4 col-lg">
+
+            <div class="mighty">
+
+                <ul>
+                    <li class="shadow sli1"  data-bs-toggle="modal" data-bs-target="#arrival20"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="shadow sli2"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li class="shadow sli3"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                </ul>
+
+                <div class="mighty1 ">
+                    <img src="image/18-600x600.jpg" class="w-100">
+                </div>
+
+                <div class="mighty2 text-center">
+                    <p class="ml mb-0">orange juice 300ml</p>
+                    <p class="op mb-1">shop</p>
+                    <p class="twe mt-0">$10.00-$20.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 col-sm-6 col-md-4 col-lg">
+
+            <div class="mighty">
+
+                <ul>
+                    <li class="shadow sli1"  data-bs-toggle="modal" data-bs-target="#arrival20"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="shadow sli2"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li class="shadow sli3"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                </ul>
+
+                
+
+                <div class="mighty1 ">
+                    <img src="image/21-600x600.jpg" class="w-100">
+                </div>
+
+                <div class="mighty2 text-center">
+                    <p class="ml mb-0"  >mighty mango</p>
+                    <p class="op mb-1">shop</p>
+                    <p class="twe mt-0">$20.00-$100.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 col-sm-6 col-md-4 col-lg">
+
+            <div class="mighty">
+
+                <ul>
+                    <li class="shadow sli1"  data-bs-toggle="modal" data-bs-target="#arrival20"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="shadow sli2"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li class="shadow sli3"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                </ul>
+
+               
+
+                <div class="mighty1 ">
+                    <img src="image/12-600x600.jpg" class="w-100">
+                </div>
+
+                <div class="mighty2 text-center">
+                    <p class="ml mb-0"  >orange marmalade</p>
+                    <p class="op mb-1">shop</p>
+                    <p class="twe mt-0">$8.00-$20.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 col-sm-6 col-md-4 col-lg">
+
+            <div class="mighty">
+
+                <ul>
+                    <li class="shadow sli1"  data-bs-toggle="modal" data-bs-target="#arrival20"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="shadow sli2"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li class="shadow sli3"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                </ul>
+
+                <span class="sale20">sale</span>
+
+                <div class="mighty1 ">
+                    <img src="image/20-600x600.jpg" class="w-100">
+                </div>
+
+                <div class="mighty2 text-center">
+                    <p class="ml mb-0">strawberr banana</p>
+                    <p class="op mb-1">shop</p>
+                    <p class="twe mt-0"><span class="cut11">$68.00</span> $60.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 col-sm-6 col-md-4 col-lg">
+
+            <div class="mighty">
+
+                <ul>
+                    <li class="shadow sli1 " data-bs-toggle="modal" data-bs-target="#arrival20"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="shadow sli2"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li class="shadow sli3"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                </ul>
+
+                <span class="sale20">sale</span>
+
+                <div class="mighty1 ">
+                    <img src="image/16-600x600.jpg" class="w-100">
+                </div>
+
+                <div class="mighty2 text-center">
+                    <p class="ml mb-0">red dragon fruit 300ml</p>
+                    <p class="op mb-1">shop</p>
+                    <p class="twe mt-0"><span class="cut11">$20.00</span> $18.00</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="arrival20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg ">
+    <div class="modal-content">
+      <!-- <div class="modal-header"> -->
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- </div> -->
+      <div class="modal-body">
+        <div class="container ">
+          <div class="row g-3  ">
+
+            <div class="col-lg-6 ">
+
+              <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="image/18-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/21-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/12-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/20-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/16-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="container-fluid">
+
+                <div class="row g-2">
+                  <div class="col-3">
+                    <img src="image/18-600x600.jpg" class="d-block w-100 border " alt="...">
+                  </div>
+
+                  <div class="col-3">
+                    <img src="image/21-600x600.jpg" class="d-block w-100 border" alt="...">
+                  </div>
+
+                  <div class="col-3">
+                    <img src="image/12-600x600.jpg" class="d-block w-100 border" alt="...">
+                  </div>
+
+                  <div class="col-3">
+                    <img src="image/20-600x600.jpg" class="d-block w-100 border" alt="...">
+                  </div>
+
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <!-- carousel recreate -->
+            <!-- <div class="col-lg-6">
+
+              <div id="carouselExampleIndicators2"  class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators " id="cei">
+        
+                  <div class="row g-2 justify-content-center">
+        
+                    <div class="col-2 ">
+                      <button type="button " data-bs-target="#carouselExampleIndicators2" id="btce1" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1">
+                        <img src="image/18-600x600.jpg" class="w-100 d-block bfci" alt="">
+                      </button>
+                    </div>
+        
+                    <div class="col-2 ">
+                      <button type="button " data-bs-target="#carouselExampleIndicators2" id="btce1" data-bs-slide-to="1" aria-label="Slide 2" class="">
+                        <img src="image/21-600x600.jpg" class="w-100 d-block bfci" alt="">
+                      </button>
+                    </div>
+        
+                    <div class="col-2 ">
+                      <button type="button " data-bs-target="#carouselExampleIndicators2" id="btce1" data-bs-slide-to="2" aria-label="Slide 3" class="">
+                        <img src="image/12-600x600.jpg" class="w-100 d-block bfci" alt="">
+                      </button>
+                    </div>
+        
+                    <div class="col-2 "> 
+                      <button type="button " data-bs-target="#carouselExampleIndicators2" id="btce1" data-bs-slide-to="3" aria-label="Slide 4" class="">
+                        <img src="image/20-600x600.jpg" class="w-100 d-block bfci" alt="">
+                      </button>
+                    </div>
+        
+                    <div class="col-2 ">
+                      <button type="button " data-bs-target="#carouselExampleIndicators2" id="btce1" data-bs-slide-to="4" aria-label="Slide 5" class="">
+                        <img src="image//16-600x600.jpg" class="w-100 d-block bfci" alt="">
+                      </button>
+                    </div>
+        
+                    
+        
+        
+                  </div>
+                  
+                </div>
+                <div class="carousel-inner ">
+                  <div class="carousel-item active">
+                    <img src="image/18-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/21-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/12-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/20-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/16-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        
+            </div> -->
+
+
+
+            
+
+            
+
+            <div class="col-lg-6">
+              <div class="inf">
+
+                <h1 class="fs-3 wild ">MIGHTY MANGO</h1>
+
+                <div class="both">
+                  <div class="star ">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <p class="rev d-inline">(6 customer reviews)</p>
+                  </div>
+                </div>
+
+                <p class="nut mt-3">Healthy snacks can be an important part of 
+                  your diet. They provide energy in the middle of the...</p>
+
+                   <div class="line mb-3"></div>
+
+                   <div class="pr1 fs-4">$20.00 – $100.00</div>
+
+                   <div class="size d-flex mt-3 mb-3">
+
+                    <div class="size1 me-4 fw-bold">Size</div>
+                    <div class="size2 ">
+                      <span class="kg1  me-1">1L</span>
+                      <span class="kg2  me-1">300ml</span>
+                      <span class="kg3  me-1">500ml</span>
+                      <span class="clr  me-1">Clear</span>
+                    </div>
+
+                   </div>
+
+                   <p class="pr2">$20.00</p>
+
+                   <p class="stock">996 in stock</p>
+
+                   <div class="pnmain d-flex mb-3">
+
+                    <div class="pn d-flex align-items-center  border">
+                      <div class="ps-1 pe-1"><i class="fa fa-plus text-secondary" aria-hidden="true"></i></div>
+                      <div class="upl"></div>
+                      <div class="one fs-4 ps-2 pe-2 ms-1 me-1 text-secondary">1</div>
+                      <div class="upl"></div>
+                      <div class="ps-1 pe-1"><i class="fa fa-minus text-secondary" aria-hidden="true"></i></div>
+                     </div>
+  
+                     <button type="button" class="btn large1 btn-lg ms-3" id="adt">Add To Cart</button>
+  
+
+                   </div>
+
+                   <p class="widh">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i> Add To Wishlist
+                   </p>
+
+                   <p class="share">
+                    SHARE: <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
+                    <i class="fa fa-pinterest" aria-hidden="true" id="pin"></i>
+                    <i class="fa fa-twitter" aria-hidden="true" id="tw"></i>
+                    <i class="fa fa-whatsapp" aria-hidden="true" id="wh"></i>
+                   </p>
+
+                   
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+       <!--     Rated Products     -->
+
+
+       <p class="cate1 fs-2 text-center ">RELATED PRODUCTS</p>
+
+      <div class="leaf text-center mb-5">
+        <img src="image/bg-title.png" alt="">
+      </div>
+
+
+
+      <div class="row justify-content-center g-3 mb-5">
+
+        <div class="col-10 col-sm-6 col-md-4 col-lg">
+
+            <div class="mighty">
+
+                <ul>
+                    <li class="shadow sli1"  data-bs-toggle="modal" data-bs-target="#arrival30"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="shadow sli2"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li class="shadow sli3"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                </ul>
+
+                <div class="mighty1 ">
+                    <img src="image/9-600x600.jpg"  class="w-100">
+                </div>
+
+                <div class="mighty2 text-center">
+                    <p class="ml mb-0">Betteraves BIO</p>
+                    <p class="op mb-1">shop</p>
+                    <p class="twe mt-0">$5.00-$20.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 col-sm-6 col-md-4 col-lg">
+
+            <div class="mighty">
+
+                <ul>
+                    <li class="shadow sli1"  data-bs-toggle="modal" data-bs-target="#arrival30"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="shadow sli2"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li class="shadow sli3"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                </ul>
+
+                
+
+                <div class="mighty1 ">
+                    <img src="image/8-600x600.jpg" class="w-100">
+                </div>
+
+                <div class="mighty2 text-center">
+                    <p class="ml mb-0"  >fresh organic fruits</p>
+                    <p class="op mb-1">shop</p>
+                    <p class="twe mt-0">$7.00-$175.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 col-sm-6 col-md-4 col-lg">
+
+            <div class="mighty">
+
+                <ul>
+                    <li class="shadow sli1"  data-bs-toggle="modal" data-bs-target="#arrival30"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="shadow sli2"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li class="shadow sli3"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                </ul>
+
+               
+
+                <div class="mighty1 ">
+                    <img src="image/13-600x600.jpg" class="w-100">
+                </div>
+
+                <div class="mighty2 text-center">
+                    <p class="ml mb-0"  >apricot ram 500ml</p>
+                    <p class="op mb-1">shop</p>
+                    <p class="twe mt-0">$10.00-30.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 col-sm-6 col-md-4 col-lg">
+
+            <div class="mighty">
+
+                <ul>
+                    <li class="shadow sli1"  data-bs-toggle="modal" data-bs-target="#arrival30"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="shadow sli2"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li class="shadow sli3"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                </ul>
+
+                
+
+                <div class="mighty1 ">
+                    <img src="image/17-600x600.jpg" class="w-100">
+                </div>
+
+                <div class="mighty2 text-center">
+                    <p class="ml mb-0">mango juice</p>
+                    <p class="op mb-1">shop</p>
+                    <p class="twe mt-0">$10.00-$30.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-10 col-sm-6 col-md-4 col-lg">
+
+            <div class="mighty">
+
+                <ul>
+                    <li class="shadow sli1 " data-bs-toggle="modal" data-bs-target="#arrival30"><i class="fa fa-search" aria-hidden="true"></i></li>
+                    <li class="shadow sli2"><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                    <li class="shadow sli3"><i class="fa fa-shopping-bag" aria-hidden="true"></i></li>
+                </ul>
+
+                
+
+                <div class="mighty1 ">
+                    <img src="image/14-600x600.jpg" class="w-100">
+                </div>
+
+                <div class="mighty2 text-center">
+                    <p class="ml mb-0">penut butter</p>
+                    <p class="op mb-1">shop</p>
+                    <p class="twe mt-0">$8.00-$50.00</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Modal -->
+<div class="modal fade" id="arrival30" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg ">
+    <div class="modal-content">
+      <!-- <div class="modal-header"> -->
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- </div> -->
+      <div class="modal-body">
+        <div class="container ">
+          <div class="row g-3  ">
+
+            <!-- <div class="col-lg-6 mb-3">
+
+              <div id="carouselExampleControlsNoTouching1" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="image/9-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/8-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/13-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/17-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/14-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="container-fluid">
+
+                <div class="row g-2">
+                  <div class="col-3">
+                    <img src="image/9-600x600.jpg" class="d-block w-100 border " alt="...">
+                  </div>
+
+                  <div class="col-3">
+                    <img src="image/8-600x600.jpg" class="d-block w-100 border" alt="...">
+                  </div>
+
+                  <div class="col-3">
+                    <img src="image/13-600x600.jpg" class="d-block w-100 border" alt="...">
+                  </div>
+
+                  <div class="col-3">
+                    <img src="image/17-600x600.jpg" class="d-block w-100 border" alt="...">
+                  </div>
+
+
+                </div>
+
+              </div>
+
+
+            </div> -->
+
+            <!-- carousel recreate -->
+            <div class="col-lg-6">
+
+              <div id="carouselExampleIndicators3"  class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators " id="cei">
+        
+                  <div class="row g-2 justify-content-center">
+        
+                    <div class="col-2 ">
+                      <button type="button " data-bs-target="#carouselExampleIndicators3" id="btce1" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1">
+                        <img src="image/9-600x600.jpg" class="w-100 d-block bfci" alt="">
+                      </button>
+                    </div>
+        
+                    <div class="col-2 ">
+                      <button type="button " data-bs-target="#carouselExampleIndicators3" id="btce1" data-bs-slide-to="1" aria-label="Slide 2" class="">
+                        <img src="image/8-600x600.jpg" class="w-100 d-block bfci" alt="">
+                      </button>
+                    </div>
+        
+                    <div class="col-2 ">
+                      <button type="button " data-bs-target="#carouselExampleIndicators3" id="btce1" data-bs-slide-to="2" aria-label="Slide 3" class="">
+                        <img src="image/13-600x600.jpg" class="w-100 d-block bfci" alt="">
+                      </button>
+                    </div>
+        
+                    <div class="col-2 "> 
+                      <button type="button " data-bs-target="#carouselExampleIndicators3" id="btce1" data-bs-slide-to="3" aria-label="Slide 4" class="">
+                        <img src="image/17-600x600.jpg" class="w-100 d-block bfci" alt="">
+                      </button>
+                    </div>
+        
+                    <div class="col-2 ">
+                      <button type="button " data-bs-target="#carouselExampleIndicators3" id="btce1" data-bs-slide-to="4" aria-label="Slide 5" class="">
+                        <img src="image//14-600x600.jpg" class="w-100 d-block bfci" alt="">
+                      </button>
+                    </div>
+        
+                    
+        
+        
+                  </div>
+                  
+                </div>
+                <div class="carousel-inner ">
+                  <div class="carousel-item active">
+                    <img src="image/9-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/8-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/13-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/17-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/14-600x600.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        
+            </div>
+
+
+
+            
+
+            
+
+            <div class="col-lg-6">
+              <div class="inf">
+
+                <h1 class="fs-3 wild ">BETTERAVES BIO</h1>
+
+                <div class="both">
+                  <div class="star ">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star me-2" aria-hidden="true"></i>
+                    <p class="rev d-inline text-secondary"> (5 customer reviews)</p>
+                  </div>
+                </div>
+
+                <p class="nut mt-3">Sapodillas tend to be found in the exotics isle of many retailers. 
+                  They are not that common except in their...</p>
+
+                   <div class="line mb-3"></div>
+
+                   <div class="pr1 fs-4">$5.00 – $20.00</div>
+
+                   <div class="size d-flex mt-3 mb-3">
+
+                    <div class="size1 me-4 fw-bold">Size</div>
+                    <div class="size2 ">
+                      <span class="kg1  me-1">1Kg</span>
+                      <span class="kg2  me-1">2Kg</span>
+                      <span class="kg3  me-1">500g</span>
+                      <span class="clr  me-1">Clear</span>
+                    </div>
+
+                   </div>
+
+                   <p class="pr2">$10.00</p>
+
+                   <p class="stock">199  in stock</p>
+
+                   <div class="pnmain d-flex mb-3">
+
+                    <div class="pn d-flex align-items-center  border">
+                      <div class="ps-1 pe-1"><i class="fa fa-plus text-secondary" aria-hidden="true"></i></div>
+                      <div class="upl"></div>
+                      <div class="one fs-4 ps-2 pe-2 ms-1 me-1 text-secondary">1</div>
+                      <div class="upl"></div>
+                      <div class="ps-1 pe-1"><i class="fa fa-minus text-secondary" aria-hidden="true"></i></div>
+                     </div>
+  
+                     <button type="button" class="btn large1 btn-lg ms-3 " id="adt">Add To Cart</button>
+  
+
+                   </div>
+
+                   <p class="widh">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i> Add To Wishlist
+                   </p>
+
+                   <p class="share">
+                    SHARE: <i class="fa fa-facebook" aria-hidden="true" id="fb"></i>
+                    <i class="fa fa-pinterest" aria-hidden="true" id="pin"></i>
+                    <i class="fa fa-twitter" aria-hidden="true" id="tw"></i>
+                    <i class="fa fa-whatsapp" aria-hidden="true" id="wh"></i>
+                   </p>
+
+                   
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+   <!--   Footer   -->
+
+   <div class="footer1 " id="ft1">
+
+    <div class="container pt-5 pb-3">
+
+      <div class="row g-3">
+
+        <div class="col-md-12 col-lg-5 ">
+
+          <div class="footer11">
+            <h4 class="touch text-white mb-3">LET'S KEEP IN TOUCH</h4>
+            <p class="late mb-4">Sign up for our e-mail to get latest news.</p>
+          </div>
+          <div class="input-group mb-3" id="in">
+            <input type="text" class="form-control " id="fc1" placeholder="Enterv Your Email Address..." aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
+          </div>
+
+        </div>
+
+        <div class="d-none d-md-block d-lg-block col-md-4 col-lg-3 about ">
+          
+          <h6 class="about1 mb-3">About Us</h6>
+
+          <ul>
+            <li>M-F 9am-5pm EST</li>
+            <li><i class="fa fa-map-marker me-1" aria-hidden="true"></i>  
+              Fox Mountain Rd, South Fork, CO 81154, USA</li>
+            <li><i class="fa fa-phone me-1" aria-hidden="true"></i> +0123.456.8386</li>
+            <li><i class="fa fa-envelope-o me-1" aria-hidden="true"></i> support@posthemes.com</li>
+          </ul>
+        </div>
+
+        <div class="d-none d-md-block d-lg-block col-md-4 col-lg-2 extras ">
+
+          <h6 class="about1 mb-3">Extras</h6>
+
+          <ul>
+            <li>Wishlist</li>
+            <li>Contact Us</li>
+            <li>My Account</li>
+          </ul>
+          
+        </div>
+
+        <div class="d-none d-md-block d-lg-block col-md-4 col-lg-2 info ">
+          
+          <h6 class="about1 mb-3">information</h6>
+
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Support center</li>
+            <li>Customer Support</li>
+          </ul>
+        </div>
+
+        <!---for mediumscreen accordion-->
+
+
+        <div class="col-12   d-md-none">
+
+          <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  About Us
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <ul>
+                    <li>M-F 9am-5pm EST</li>
+                    <li><i class="fa fa-map-marker me-1" aria-hidden="true"></i>  
+                      Fox Mountain Rd, South Fork, CO 81154, USA</li>
+                    <li><i class="fa fa-phone me-1" aria-hidden="true"></i> +0123.456.8386</li>
+                    <li><i class="fa fa-envelope-o me-1" aria-hidden="true"></i> support@posthemes.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Extras
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <ul>
+                    <li>Wishlist</li>
+                    <li>Contact Us</li>
+                    <li>My Account</li>
+                  </ul>
+                  
+
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  information
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Support center</li>
+                    <li>Customer Support</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+        
+
+
+
+        
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="footer2 pt-4 pb-4" id="ft2">
+
+    <div class="container">
+
+      <div class="row justify-content-center g-3">
+
+        <div class="col-sm-6 col-lg-3 ">
+          <div class="ficon text-center">
+            <i class="fa fa-facebook" aria-hidden="true" id="ficon1"></i>
+            <i class="fa fa-twitter" aria-hidden="true" id="ficon2"></i>
+            <i class="fa fa-instagram" aria-hidden="true" id="ficon3"></i>
+            <i class="fa fa-google" aria-hidden="true" id="ficon4"></i>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-lg-5  ">
+          <p class="copy text-center ">
+            Copyright by PlazaThemes. All Rights Reserved.
+          </p>
+        </div>
+
+        <div class="col-sm-8 col-lg-4 text-center ">
+          <img src="image/img-payment.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--   Footer Ends   -->
+
+
+
+
+      <!--fixed-->
+
+      <a href="#pheader" id="ifixic"><i class="fa fa-angle-up " aria-hidden="true" id="fixic"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

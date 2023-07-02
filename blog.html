@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="amino.css">
+</head>
+<body>
+
+
+
+
+
+     <!---navbar start-->
+
+  <div class="navbar1 pt-4 pb-4 d-none d-lg-block shadow sticky-top">
+    <div class="container-fluid ">
+      <div class="row  align-items-center">
+
+        <div class=" col-2 ">
+          <div class="amino text-center">
+            <a href="index.html">
+              <img src="image/logo_amino.png" class="img-fluid">
+            </a>
+            
+          </div>
+        </div>
+
+        <div class="col-8 ">
+          <div class="list1 d-flex justify-content-center">
+            
+            <ul class="">
+              <li class="li21">
+                <a href="index.html">Home</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="product.html">Product</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="blog.html">Blog</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="about.html">About Us</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li class="li21">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="icon text-center">
+           <i class="fa fa-search  me-2" aria-hidden="true"
+           data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"></i> 
+
+            <i class="fa fa-user-o ms-2 me-2" aria-hidden="true"
+            data-bs-toggle="modal" data-bs-target="#staticBackdrop1"></i>
+
+            <i class="fa fa-heart-o ms-2 me-2 position-relative" aria-hidden="true">
+              <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill ">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </i>
+
+            <i class="fa fa-shopping-cart ms-2 position-relative" aria-hidden="true">
+              <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill ">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!--********offcanvas search Modal user*****-->
+
+    <div class="offcanvas offcanvas-top h-50" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body ">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 ">
+
+              <div class="input-group ig1 mb-5 d-flex justify-content-center align-items-center mb-3">
+                
+                <input type="text" id="text1" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                <i class="fa fa-search ms-2 fs-3" aria-hidden="true"></i>
+              </div>
+
+              <div class="input-group1">
+                <p class="p1">Popular searches :</p>
+                <ul class="d-flex">
+                  <li class=" me-1">organic</li>
+                  <li class="ms-1 me-1">fruit</li>
+                  <li class="ms-1 me-1">juice</li>
+                  <li class="ms-1 me-1">almond</li>
+                  <li class="ms-1 me-1">apple</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+<div class="modal fade " id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      
+
+        <button type="button " class="btn-close btn1" data-bs-dismiss="modal" aria-label="Close"></button>
+      
+      <div class="modal-body ">
+
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="tabstyle" role="presentation">
+            <a class="nav-link active"  data-bs-toggle="pill" href="#pills-home"  role="tab" >Login</a>
+          </li>
+          <li class="tabstyle" role="presentation">
+            <a class="nav-link"  data-bs-toggle="pill" href="#pills-profile"  role="tab" >
+              Register</a>
+          </li>
+          
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            
+            <form action="" class="row needs-validation justify-content-center">
+
+              <div class="col-sm-9">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control fcl" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+            
+
+              
+                <label for="inputPassword" class="col-form-label">Password</label>
+                <div class="input-group has-validation mb-3">
+                  <input type="password" class="form-control fcl" id="inputPassword" required>
+                </div>
+              
+
+              <div class=" text-center d-flex justify-content-between">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Remember me
+                  </label>
+                </div>
+
+                <p class="lost">Lost Password?</p>
+              </div>
+
+              <div class="lg text-center">
+                <button class="btn btn-primary" type="submit" id="mit">LOG IN</button>
+              </div>
+
+            </div>
+
+            </form>
+          </div>
+
+
+
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+            <form action="" class="row needs-validation justify-content-center">
+
+              <div class="col-sm-9">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation mb-2">
+                  <input type="text" class="form-control fcl" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+
+
+                <label for="validationCustomUsername1" class="form-label">Email</label>
+                <div class="input-group has-validation ">
+                     <input type="email" class="form-control fcl" id="validationCustomUsername1" aria-describedby="inputGroupPrepend" required>
+                 <div class="invalid-feedback">
+                   Please choose a username.
+                   </div>
+                </div>
+            
+
+              
+                <label for="inputPassword" class="col-form-label">Password</label>
+                <div class="input-group has-validation mb-3">
+                  <input type="password" class="form-control fcl" id="inputPassword" required>
+                  <div class="invalid-feedback">
+                    Please enter a password.
+                  </div>
+                </div>
+
+
+                <p class="pers text-center">
+                  Your personal data will be used to support your experience throughout 
+                  this website, to manage access to your account, 
+                  and for other purposes described in our privacy policy.
+                </p>
+              
+
+              
+
+              <div class="lg text-center">
+                <button class="btn btn-primary" type="submit" id="mit">Register</button>
+              </div>
+
+            </div>
+
+            </form>
+          </div>
+        </div>
+
+
+        
+
+
+
+
+        
+        
+
+        
+      </div>
+
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+
+    <!--******** offcanvas search Modal user ENDS *******-->
+
+  <nav class="navbar bg-white navbar-expand-lg pt-4 pb-4 navbar-light sticky-top shadow d-block d-lg-none fixed-top ">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Amino</a> -->
+      <div class="col-3 first ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!-- <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5> -->
+            <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <!-- </div> -->
+          <p class="head text-center pb-3">MENU</p>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 ">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="blog.html">
+                  Blog
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html">
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <i class="fa fa-search ms-2 me-2 fs-4" 
+          data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-hidden="true"></i>
+      </div>
+
+
+      <div class="col-6 ">
+        <div class="amino text-center">
+          <a href="index.html">
+            <img src="image/logo_amino.png" class="img-fluid">
+          </a>
+          
+        </div>
+      </div>
+
+      <div class="col-3 ">
+        <div class="icon text-end">
+         <i class="fa fa-user-o me-1" aria-hidden="true"
+         data-bs-toggle="modal" data-bs-target="#staticBackdrop1"></i> 
+          <i class="fa fa-shopping-cart me-2 position-relative" aria-hidden="true">
+            <span class="position-absolute top-100 start-100 translate-middle badge rounded-pill ">
+              0
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </i>
+        </div>
+      </div>
+
+      
+    </div>
+    
+  </nav>
+
+
+
+
+  <!-------********Navbar Ends**********-->
+
+
+  <!--************  Header    *************-->
+  <div class="head1 text-center pt-5 pb-5" id="bheader">
+
+    <p class="title1">Blog</p>
+   
+    <p class="cntus"><a href="index.html">Home</a>Blog</p>
+    
+  </div>    
+
+
+  <!--**********  Header Ends  ***********-->
+
+
+
+  <!--********** Reverse Column  ***************-->
+
+  <div class="container mt-5 mb-5 postm">
+
+    <div class="row g-5 flex-column-reverse flex-lg-row">
+             <!--left-->
+      <div class="col-lg-3">
+
+        <div class="post1 mb-4">
+          <h5 class="arch ">Search</h5>
+          <div class="arch1"></div>
+          <div class="arch2 mb-4"></div>
+
+          <div class="input-group ig3">
+            <input type="search" class="form-control fcln" placeholder="Search..." 
+            aria-label="Recipient's username" aria-describedby="button-addon22">
+            <button class="btn btn-outline-secondary ms-1" type="button" id="button-addon22">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="post2 mb-5">
+
+          <h5 class="arch ">Recent Posts</h5>
+          <div class="arch1"></div>
+          <div class="arch2 mb-4"></div>
+
+          
+
+          <ul>
+
+            <li class="d-flex justify-content-start w-100 mb-3">
+              <div class="aliq me-3">
+                <img src="image/post3-150x150.jpg" alt="" class="aliq1">
+              </div>
+
+              <div class="aliq2 w-100 align-self-center" >
+                <p class="vel">Aliquam vel ante mattis</p>
+                <p class="no">November 29, 2021</p>
+              </div>
+            </li>
+
+            <li class="d-flex justify-content-start w-100 mb-3">
+              <div class="aliq me-3">
+                <img src="image/post4-150x150.jpg" alt="" class="aliq1">
+              </div>
+
+              <div class="aliq2 w-100 align-self-center" >
+                <p class="vel">Praesent imperdiet going</p>
+                <p class="no">July 13, 2021</p>
+              </div>
+            </li>
+
+            <li class="d-flex justify-content-start w-100 mb-3">
+              <div class="aliq me-3">
+                <img src="image/post2-150x150.jpg" alt="" class="aliq1">
+              </div>
+
+              <div class="aliq2 w-100 align-self-center" >
+                <p class="vel">Maecenas ultricies treatise</p>
+                <p class="no">June 6, 2021</p>
+              </div>
+            </li>
+
+            <li class="d-flex justify-content-start w-100 mb-3">
+              <div class="aliq me-3">
+                <img src="image/post6-150x150.jpg" alt="" class="aliq1">
+              </div>
+
+              <div class="aliq2 w-100 align-self-center" >
+                <p class="vel">Libero lorem treatise</p>
+                <p class="no">May 16, 2021</p>
+              </div>
+            </li>
+
+            <li class="d-flex justify-content-start w-100 mb-3">
+              <div class="aliq me-3">
+                <img src="image/post9-150x150.jpg" alt="" class="aliq1">
+              </div>
+
+              <div class="aliq2 w-100 align-self-center" >
+                <p class="vel">Nunc vitae lacus eget</p>
+                <p class="no">May 9, 2021</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="post3 mb-5">
+
+          <h5 class="arch ">Latest Comments</h5>
+          <div class="arch1"></div>
+          <div class="arch2 mb-4"></div>
+
+
+          <ul>
+            <li>aserfgaw on Wild pecan nuts</li>
+            <li>aerag on Wild pecan nuts</li>
+            <li>aergar on Wild pecan nuts</li>
+          <li> aergar on Wild pecan nuts</li>
+          <li>q34tq on Wild pecan nuts</li>
+          </ul>
+        </div>
+
+
+
+        <div class="post4 mb-5">
+
+          <h5 class="arch ">Gallery</h5>
+          <div class="arch1"></div>
+          <div class="arch2 mb-4"></div>
+
+          <div class="row g-2">
+            <div class="col-6 col-md-4">
+              <img src="image/post10-150x150.jpg" alt="" class="w-100">
+            </div>
+
+            <div class="col-6 col-md-4">
+              <img src="image/post8-150x150.jpg" alt="" class="w-100">
+            </div>
+
+            <div class="col-6 col-md-4">
+              <img src="image/post9-150x150.jpg" alt="" class="w-100">
+            </div>
+
+            <div class="col-6 col-md-4">
+              <img src="image/post7-150x150.jpg" alt="" class="w-100">
+            </div>
+
+            <div class="col-6 col-md-4">
+              <img src="image/post6-150x150.jpg" alt="" class="w-100">
+            </div>
+
+            <div class="col-6 col-md-4">
+              <img src="image/post5-150x150.jpg" alt="" class="w-100">
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="post5 mb-5">
+
+          <h5 class="arch ">Categories</h5>
+          <div class="arch1"></div>
+          <div class="arch2 mb-4"></div>
+
+          <ul>
+            <li>Audio</li>
+            <li>Chips</li>
+            <li>Company</li>
+            <li>Gallery</li>
+            <li>Other</li>
+            <li>Snocks</li>
+            <li>Travel</li>
+            <li>Uncategorized</li>
+            <li>Wordpress</li>
+          </ul>
+
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+          <div class="col-10 col-sm-6 col-md-5 col-lg-12  ">
+            <div class="post6 text-center">
+          
+              <img src="image/img-banner-sidebar.jpg" alt="" class=" w-100 ">
+           
+            
+          </div>
+          </div>
+        </div>
+
+        
+
+
+        <!-- <div class="post61 text-center d-block d-lg-none">
+          
+          <img src="image/img-banner-sidebar.jpg" alt="" class="">
+       
+        
+      </div> -->
+
+        
+
+      </div>
+
+      <!--right-->
+
+      <div class="col-lg-9 right2">
+
+        <div class="row g-5">
+
+          <div class="col-12">
+
+            <div class="wrap">
+
+              <div class="wrap1 mb-4">
+                <img src="image/post1.jpg" alt="" class="w-100">
+                <div class="wrapcontent shadow">
+                  <span class="day">24</span>
+                  <span class="month">Apr</span>
+                </div>
+              </div>
+
+              <div class="wrapcontent2">
+
+                <p class="salt"><img src="image/quality.png" class="me-1"> Snacks</p>
+                <h4 class="salt1"><img src="image/airplane.png" class="me-1"> Spring Dress Try – On Haul</h4>
+                <p class="salt2 mt-3">This is one of my favorite dress designers (has been for years!). Every detail in this dress (30%...</p>
+                <button type="button" class="btn warn mt-3">read more</button>
+              </div>
+              
+            </div>
+
+            
+
+          </div>
+          <!--first image-->
+
+
+          <div class="col-12">
+
+            <div class="wrap">
+
+              <div class="wrap1 mb-4">
+                <img src="image/post3.jpg" alt="" class="w-100">
+                <div class="wrapcontent shadow">
+                  <span class="day">29</span>
+                  <span class="month">Nov</span>
+                </div>
+              </div>
+
+              <div class="wrapcontent2">
+
+                <p class="salt"><img src="image/quality.png" class="me-1"> Chips</p>
+                <h4 class="salt1">Aliquam vel ante mattis</h4>
+                <p class="salt2 mt-3">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum...</p>
+                <button type="button" class="btn warn mt-3">read more</button>
+              </div>
+              
+            </div>
+
+            
+
+          </div>
+
+          <!-- Second Image -->
+
+          <div class="col-12">
+
+            <div class="wrap">
+
+              <div class="wrap1 mb-4">
+                <img src="image/post4.jpg" alt="" class="w-100">
+                <div class="wrapcontent shadow">
+                  <span class="day">13</span>
+                  <span class="month">Jul</span>
+                </div>
+              </div>
+
+              <div class="wrapcontent2">
+
+                <p class="salt"><img src="image/quality.png" class="me-1"> Uncategorized, Wordpress</p>
+                <h4 class="salt1">Praesent imperdiet going</h4>
+                <p class="salt2 mt-3">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum...</p>
+                <button type="button" class="btn warn mt-3">read more</button>
+              </div>
+              
+            </div>
+
+            
+
+          </div>
+
+          <!--Third Image-->
+
+          <div class="col-12">
+
+            <div class="wrap">
+
+              <div class="wrap1 mb-4">
+                <img src="image/post2.jpg" alt="" class="w-100">
+                <div class="wrapcontent shadow">
+                  <span class="day">06</span>
+                  <span class="month">Jun</span>
+                </div>
+              </div>
+
+              <div class="wrapcontent2">
+
+                <p class="salt"><img src="image/quality.png" class="me-1">  Travel, Wordpress</p>
+                <h4 class="salt1">Maecenas ultricies treatise</h4>
+                <p class="salt2 mt-3">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum...</p>
+                <button type="button" class="btn warn mt-3">read more</button>
+              </div>
+              
+            </div>
+
+            
+
+          </div>
+
+          <!--Four images-->
+
+          <div class="col-12">
+
+            <div class="wrap">
+
+              <div class="wrap1 mb-4">
+                <img src="image/post6.jpg" alt="" class="w-100">
+                <div class="wrapcontent shadow">
+                  <span class="day">16</span>
+                  <span class="month">May</span>
+                </div>
+              </div>
+
+              <div class="wrapcontent2">
+
+                <p class="salt"><img src="image/quality.png" class="me-1"> Company, Wordpress</p>
+                <h4 class="salt1">Libero lorem treatise</h4>
+                <p class="salt2 mt-3">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum...</p>
+                <button type="button" class="btn warn mt-3">read more</button>
+              </div>
+              
+            </div>
+
+            
+
+          </div>
+
+          <!--fifh image-->
+
+          <div class="col-12">
+
+            <div class="wrap">
+
+              <div class="wrap1 mb-4">
+                <img src="image/post9.jpg" alt="" class="w-100">
+                <div class="wrapcontent shadow">
+                  <span class="day">09</span>
+                  <span class="month">May</span>
+                </div>
+              </div>
+
+              <div class="wrapcontent2">
+
+                <p class="salt"><img src="image/quality.png" class="me-1"> Audio, Travel</p>
+                <h4 class="salt1">Nunc vitae lacus eget</h4>
+                <p class="salt2 mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s...</p>
+                <button type="button" class="btn warn mt-3">read more</button>
+              </div>
+              
+            </div>
+
+            
+
+          </div>
+
+          <!--sixth image-->
+
+
+          <div class="col-12">
+
+            <div class="wrap">
+
+              <div class="wrap1 mb-4">
+                <img src="image/post10.jpg" alt="" class="w-100">
+                <div class="wrapcontent shadow">
+                  <span class="day">11</span>
+                  <span class="month">Mar</span>
+                </div>
+              </div>
+
+              <div class="wrapcontent2">
+
+                <p class="salt"><img src="image/quality.png" class="me-1"> Gallery, Wordpress</p>
+                <h4 class="salt1">Aenean nec suscipit nibh</h4>
+                <p class="salt2 mt-3">This is one of my favorite dress designers (has been for years!). Every detail in this dress (30%...</p>
+                <button type="button" class="btn warn mt-3">read more</button>
+              </div>
+              
+            </div>
+
+          
+          </div>
+
+          <!-- Seventh image -->
+
+          <div class="col-12">
+
+            <div class="wrap">
+
+              <div class="wrap1 mb-4">
+                <img src="image/post7.jpg" alt="" class="w-100">
+                <div class="wrapcontent shadow">
+                  <span class="day">13</span>
+                  <span class="month">Feb</span>
+                </div>
+              </div>
+
+              <div class="wrapcontent2">
+
+                <p class="salt"><img src="image/quality.png" class="me-1"> Other, Travel</p>
+                <h4 class="salt1">Tortor posuere more obscure</h4>
+                <p class="salt2 mt-3">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum...</p>
+                <button type="button" class="btn warn mt-3">read more</button>
+              </div>
+              
+            </div>
+
+          
+          </div>
+
+          <!--Eighth image-->
+
+          <div class="col-12">
+
+            <div class="wrap">
+
+              <div class="wrap1 mb-4">
+                <img src="image/post5.jpg" alt="" class="w-100">
+                <div class="wrapcontent shadow">
+                  <span class="day">08</span>
+                  <span class="month">Mar</span>
+                </div>
+              </div>
+
+              <div class="wrapcontent2">
+
+                <p class="salt"><img src="image/quality.png" class="me-1"> Other, Wordpress</p>
+                <h4 class="salt1">Quisque egestas have suffered</h4>
+                <p class="salt2 mt-3">Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum...</p>
+                <button type="button" class="btn warn mt-3">read more</button>
+              </div>
+              
+            </div>
+
+          
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+   <!--********** Reverse Column ends ***************-->
+
+
+
+
+
+
+    <!--   Footer   -->
+
+    <div class="footer1 " id="ft1">
+
+      <div class="container pt-5 pb-3">
+
+        <div class="row g-3">
+
+          <div class="col-md-12 col-lg-5 ">
+
+            <div class="footer11">
+              <h4 class="touch text-white mb-3">LET'S KEEP IN TOUCH</h4>
+              <p class="late mb-4">Sign up for our e-mail to get latest news.</p>
+            </div>
+            <div class="input-group mb-3" id="in">
+              <input type="text" class="form-control " id="fc1" placeholder="Enterv Your Email Address..." aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Sign Up</button>
+            </div>
+
+          </div>
+
+          <div class="d-none d-md-block d-lg-block col-md-4 col-lg-3 about ">
+            
+            <h6 class="about1 mb-3">About Us</h6>
+
+            <ul>
+              <li>M-F 9am-5pm EST</li>
+              <li><i class="fa fa-map-marker me-1" aria-hidden="true"></i>  
+                Fox Mountain Rd, South Fork, CO 81154, USA</li>
+              <li><i class="fa fa-phone me-1" aria-hidden="true"></i> +0123.456.8386</li>
+              <li><i class="fa fa-envelope-o me-1" aria-hidden="true"></i> support@posthemes.com</li>
+            </ul>
+          </div>
+
+          <div class="d-none d-md-block d-lg-block col-md-4 col-lg-2 extras ">
+
+            <h6 class="about1 mb-3">Extras</h6>
+
+            <ul>
+              <li>Wishlist</li>
+              <li>Contact Us</li>
+              <li>My Account</li>
+            </ul>
+            
+          </div>
+
+          <div class="d-none d-md-block d-lg-block col-md-4 col-lg-2 info ">
+            
+            <h6 class="about1 mb-3">information</h6>
+
+            <ul>
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Support center</li>
+              <li>Customer Support</li>
+            </ul>
+          </div>
+
+          <!---for mediumscreen accordion-->
+
+
+          <div class="col-12   d-md-none">
+
+            <div class="accordion" id="accordionExample">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    About Us
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                    <ul>
+                      <li>M-F 9am-5pm EST</li>
+                      <li><i class="fa fa-map-marker me-1" aria-hidden="true"></i>  
+                        Fox Mountain Rd, South Fork, CO 81154, USA</li>
+                      <li><i class="fa fa-phone me-1" aria-hidden="true"></i> +0123.456.8386</li>
+                      <li><i class="fa fa-envelope-o me-1" aria-hidden="true"></i> support@posthemes.com</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Extras
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                    <ul>
+                      <li>Wishlist</li>
+                      <li>Contact Us</li>
+                      <li>My Account</li>
+                    </ul>
+                    
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    information
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+
+                    <ul>
+                      <li>About Us</li>
+                      <li>Contact Us</li>
+                      <li>Support center</li>
+                      <li>Customer Support</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+          
+
+
+
+          
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="footer2 pt-4 pb-4" id="ft2">
+
+      <div class="container">
+
+        <div class="row justify-content-center g-3">
+
+          <div class="col-sm-6 col-lg-3 ">
+            <div class="ficon text-center">
+              <i class="fa fa-facebook" aria-hidden="true" id="ficon1"></i>
+              <i class="fa fa-twitter" aria-hidden="true" id="ficon2"></i>
+              <i class="fa fa-instagram" aria-hidden="true" id="ficon3"></i>
+              <i class="fa fa-google" aria-hidden="true" id="ficon4"></i>
+            </div>
+
+          </div>
+
+          <div class="col-sm-12 col-lg-5  ">
+            <p class="copy text-center ">
+              Copyright by PlazaThemes. All Rights Reserved.
+            </p>
+          </div>
+
+          <div class="col-sm-8 col-lg-4 text-center ">
+            <img src="image/img-payment.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!--   Footer Ends   -->
+
+<!--fixed-->
+
+<a href="#bheader" id="ifixic"><i class="fa fa-angle-up " aria-hidden="true" id="fixic"></i></a>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
